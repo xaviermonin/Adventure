@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListView xmlns="http://xamarin.com/schemas/2014/forms"
+          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+          xmlns:logic="clr-namespace:Adventure.UI.Messenger.Logic"
+          xmlns:androidSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+          xmlns:fabControl="clr-namespace:Refractored.FabControl;assembly=Refractored.FabControl"
+          x:Class="Adventure.UI.MessengerView"
+          ItemTemplate="{StaticResource MessageDataTemplateSelector}"
+          SeparatorVisibility="None"
+          HasUnevenRows="True"
+          GroupHeaderTemplate="{StaticResource GroupedMessageDataTemplateSelector}"
+          IsGroupingEnabled="True"
+          androidSpecific:ListView.IsFastScrollEnabled="True">
+    <ListView.Resources>
+        <ResourceDictionary>
+            <logic:MessageDataTemplateSelector x:Key="MessageDataTemplateSelector" />
+            <logic:GroupedMessageDataTemplateSelector x:Key="GroupedMessageDataTemplateSelector" />
+        </ResourceDictionary>
+    </ListView.Resources>
+</ListView>

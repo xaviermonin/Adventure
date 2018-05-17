@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ui:ExpandableView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ui="clr-namespace:Adventure.UI;assembly=Adventure.UI"
+             x:Class="Adventure.UI.ChoicerView">
+    <ui:ExpandableView.ExpandableContent>
+        <Grid x:Name="ChoiceGrid" />
+    </ui:ExpandableView.ExpandableContent>
+</ui:ExpandableView>

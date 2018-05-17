@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+          xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+          xmlns:fftransformation="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+             x:Class="Adventure.UI.Messenger.Template.ToGroupedMessageTemplate">
+  <ViewCell.View>
+      <StackLayout HorizontalOptions="End" Orientation="Horizontal">
+            <Label Text="{Binding Author}" VerticalOptions="Center"/>
+            <ff:CachedImage Source="{Binding ProfileImageUri}">
+              <ff:CachedImage.Transformations>
+                  <fftransformation:CircleTransformation BorderSize="3" BorderHexColor="#000000"/>
+              </ff:CachedImage.Transformations>
+          </ff:CachedImage>
+        </StackLayout>
+    </ViewCell.View>
+</ViewCell>

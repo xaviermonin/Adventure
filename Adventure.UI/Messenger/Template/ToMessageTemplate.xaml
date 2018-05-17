@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:fftransformation="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+             x:Class="Adventure.UI.Messenger.Template.ToMessageTemplate"
+             IsEnabled="False">
+    <ViewCell.View>
+        <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="End" Margin="5" VerticalOptions="EndAndExpand">
+            <Frame BackgroundColor="#2FA68E" CornerRadius="10" Padding="5" >
+                <StackLayout VerticalOptions="EndAndExpand">
+                    <Label Text="{Binding Message}" FontSize="Small" TextColor="White" />
+                    <Label Text="{Binding Date}" FontSize="Micro" TextColor="White"  HorizontalOptions="End" HorizontalTextAlignment="End" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ViewCell.View>
+</ViewCell>

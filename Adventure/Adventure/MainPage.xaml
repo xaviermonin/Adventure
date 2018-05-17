@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Adventure"
+             xmlns:ui="clr-namespace:Adventure.UI;assembly=Adventure.UI"
+             xmlns:fabControl="clr-namespace:Refractored.FabControl;assembly=Refractored.FabControl"
+             x:Class="Adventure.MainPage">
+
+    <StackLayout>
+        <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <ui:MessengerView x:Name="Messenger" ItemsSource="{Binding}"
+                              BindingContext="{x:Static local:MessageProvider.Messages}"
+                              AbsoluteLayout.LayoutFlags="All"
+                              AbsoluteLayout.LayoutBounds="0,0,1,1">
+            </ui:MessengerView>
+            <fabControl:FloatingActionButtonView AbsoluteLayout.LayoutFlags="PositionProportional"
+                                                 AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize" IsVisible="False" />
+        </AbsoluteLayout>
+
+        <ui:ChoicerView x:Name="Choicer">
+        </ui:ChoicerView>
+    </StackLayout>
+
+</ContentPage>
